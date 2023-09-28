@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 async function connect() {
 	try {
-		await mongoose.connect("mongodb://127.0.0.1:27017/job_recruitment");
+		const username = "haruta-job_1";
+		const password = "LPOXvK1idBRQxpt3";
+
+		const url = `mongodb+srv://${username}:${password}@atlascluster.akqikjq.mongodb.net/job_recruitment?retryWrites=true&w=majority`;
+		await mongoose.connect(url);
 		console.log("connect successfully");
 	} catch (error) {
 		console.log("error connecting");
