@@ -7,7 +7,7 @@
     "beautiful": "prettier --single-quote --trailing-comma all --write src/**/*.{js,json,scss}",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch src/resources/scss/ -o src/public/css/",
-    "start": "nodemon --inspect src/index.js"
+    "start": "node src/index.js"
   },
   "author": "HaRuTa",
   "license": "ISC",
